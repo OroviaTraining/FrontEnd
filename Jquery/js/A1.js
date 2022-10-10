@@ -9,7 +9,7 @@ $(function(){
         var bInt=parseInt(bStr);
         var cInt=aInt*bInt;
         $("#txtR2").val(cInt);
-    })
+    });
     //Both buttons have common handler
     $("#btnSub,#btnDiv").click(Operations);
     //All buttons inside a given DIV
