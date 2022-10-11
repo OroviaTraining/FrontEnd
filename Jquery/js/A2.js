@@ -24,7 +24,7 @@ $(document).ready(function () {
     });
 
 
-    //radio length using (this).prop
+    //radio length using (this).prop method
     $("#r1").on("change", function () {
         var tick = $(this).prop("checked");
         if (tick == true) {
