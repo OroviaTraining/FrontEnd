@@ -55,29 +55,27 @@ $(document).ready(function () {
 function getRadioValue(){
     var a = parseFloat($("#txtA").val());
     var b = parseFloat($("#txtB").val());
+    var res=0;
     //getting the radio values
-    var add = $("#rAdd").prop("checked");
-    var sub = $("#rSub").prop("checked");
-    var div = $("#rDiv").prop("checked");
-    var mul = $("#rMul").prop("checked");
-   var a= $('input[name="operators"]:checked').val();
-    if (a == "add") {
-        var addition = a + b;
-        $("#lblRes").text(addition);
+   var optionSeleted= $('input[name="operators"]:checked').val();
+    if (optionSeleted == "add") {
+        res = a + b;
+        
     }
-    else if(sub==true){
-        var subtraction=a-b;
-        $("#lblRes").text(subtraction);
+    else if(optionSeleted=="divide"){
+        res=a/b;
+       
     }
-    else if(div==true){
-        var division=a/b;
-        $("#lblRes").text(division);
+    else if(optionSeleted=="Sub"){
+        res=a-b;
+        
     }
-    else if(mul==true){
-        var multiply=a*b;
-        $("#lblRes").text(multiply);
+    else if(optionSeleted=="multiply"){
+        res=a*b;
+       
 
     }else{
         $("#lblRes").text("Enter some value");
     }
+    $("#lblRes").text(res); 
 }
