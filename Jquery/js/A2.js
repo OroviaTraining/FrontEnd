@@ -60,7 +60,8 @@ function getRadioValue(){
     var sub = $("#rSub").prop("checked");
     var div = $("#rDiv").prop("checked");
     var mul = $("#rMul").prop("checked");
-    if (add == true) {
+   var a= $('input[name="operators"]:checked').val();
+    if (a == "add") {
         var addition = a + b;
         $("#lblRes").text(addition);
     }
