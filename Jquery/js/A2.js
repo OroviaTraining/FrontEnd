@@ -2,6 +2,7 @@ $(document).ready(function () {
     //use of prop method
     $("#btnSubmit").click(getRadioValue); 
 
+    
     //use of change event
     $("input[name=operators1]").on("change", function () {
         var a = parseFloat($("#txtA2").val());
