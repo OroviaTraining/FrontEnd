@@ -1,9 +1,9 @@
 $(document).ready(function () {
-    //use of prop method
+    //radio buttons with same name
     $("#btnSubmit").click(getRadioValue); 
 
     
-    //use of change event
+    //use of change event and porp method
     $("input[name=operators1]").on("change", function () {
         var a = parseFloat($("#txtA2").val());
         var b = parseFloat($("#txtB2").val());
@@ -12,44 +12,13 @@ $(document).ready(function () {
         var div = $("#r2Div").prop("checked");
         if (add == true) {
             res = a + b;
-            $("#lblRes1").text(res);
         }
-        
         else if (div == true) {
             res = a / b;
-            $("#lblRes1").text(res);
         }
-         else{
-        $("#lblRes1").text("Enter some value");
-        }
+        $("#lblRes1").text(res);
     });
-
-
-    //radio length using (this).prop method
-    $("#r1").on("change", function () {
-        var tick = $(this).prop("checked");
-        if (tick == true) {
-            $("#msg1").append("r1 is ticked"+"<br>");
-        }
-    });
-    $("#r2").on("change", function () {
-        var tick = $(this).prop("checked");
-        if (tick == true) {
-            $("#msg1").append("r2 is ticked"+"<br>");
-        }
-    });
-    $("#r3").on("change", function () {
-        var tick = $(this).prop("checked");
-        if (tick == true) {
-            $("#msg1").append("r3 is ticked"+"<br>");
-        }
-    });
-    $("#r4").on("change", function () {
-        var tick = $(this).prop("checked");
-        if (tick == true) {
-            $("#msg1").append("r4 is ticked"+"<br>");
-        }
-    });
+  
 });	
 
 function getRadioValue(){
