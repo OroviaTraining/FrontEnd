@@ -1,21 +1,41 @@
 var g_array = ["7", "blue", "delhi"];
 $(document).ready(function () {
   $("#btnSubmit").click(function () {
-    var firstQuestion = $("input[type=radio]:checked", "#QOne").val();
-    var secondQuestion = $("input[type=radio]:checked", "#QTwo").val();
-    var thirdQuestion = $("input[type=radio]:checked", "#QThree").val();
+    var firstQuestion = $("input[name='Q1']:checked").val();
+    var secondQuestion = $("input[name='Q2']:checked").val();
+    var thirdQuestion = $("input[name='Q3']:checked").val();
+  
+   if (firstQuestion == g_array[0]) {
+    $("#msg").append("Q1-correct" + "<br/>");
+  } else {
+    $("#msg").append("Q1-wrong" + "<br/>");
+  }
 
-    
-      if (firstQuestion == g_array[0] && secondQuestion == g_array[1]&&thirdQuestion == g_array[2]) {
-       $("#msg").append("<br/>"+"Q1-correct"+"<br/>"+"Q3-correct"+"<br/>"+"Q2-correct"+"<br/>");
-      } 
-       else {
-        $("#msg").text("some answers are wrong");
-      }
+  if (secondQuestion == g_array[1]) {
+    $("#msg").append("Q2-correct" + "<br/>");
+  } else {
+    $("#msg").append("Q1-wrong" + "<br/>");
+  }
+
+  if (thirdQuestion == g_array[2]) {
+    $("#msg").append("Q3-correct" + "<br/>");
+  } else {
+    $("#msg").append("Q1-wrong" + "<br/>");
+  }
+
   });
 
+  //if (firstQuestion == g_array[0] && secondQuestion == g_array[1] && thirdQuestion == g_array[2]) {
+   // $("#msg").append("<br/>"+"Q1-correct"+"<br/>"+"Q3-correct"+"<br/>"+"Q2-correct"+"<br/>");
+  // } 
+   // else {
+    // $("#msg").text("some answers are wrong");
+  // }
+
+
+
   $("#btnClear").click(function () {
-    $("input[type=radio]").prop("checked", false);
+    $("input[type='radio']").prop("checked", false);
     $("#msg").empty();
   });
 });
