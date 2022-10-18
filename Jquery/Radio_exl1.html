@@ -20,7 +20,17 @@
       <li>Writing a Javascript function</li>
       <li>Attaching a function to click event of save button</li>
     </ol>
-  
+    <p><b>jQuery .prop() Method: This method is used to get the value of a property for the first element in the set of matched elements.
+      <br/>
+      Syntax:
+      
+      $(selector).prop(property)</b></p>
+      <p><b>jQuery .attr() method: This method is used to either fetch the value of an attribute from the first element in the matched set or set attribute values onto all matched elements.
+          <br/>
+          Syntax:
+          
+          $(selector).attr(attribute)</b></p>
+<hr/>
       <legend>Method 1</legend>
       <div>
         <table>
@@ -117,8 +127,53 @@
         <label>Result:</label><label id="lblRes1"></label>
       </div>
 
-      <hr />
-
+      <hr/>
+      <h3>Method 3</h3>
+      
+      <table>
+          <tr>
+              <td>Name:</td>
+              <td><input type="text" id="txtA"></td>
+          </tr>
+          <tr>
+              <td>Gender:</td>
+              <td><input type="radio" name="gender" value="male">
+                  <label >Male</label>
+                  <input type="radio" name="gender" value="female">
+                  <label >Female</label>
+                  <input type="radio" name="gender" value="other">
+                  <label >Other</label>
+              </td>
+          </tr>
+          <tr>
+              <td>Marital status:</td>
+              <td>
+                  <input type="radio" name="married" value="yes">
+                  <label >Yes</label>
+                  <input type="radio" name="married" value="no">
+                  <label >No</label>
+                  <input type="radio" name="married" value="divorced">
+                  <label >Divorced</label>
+                  <input type="radio" name="married" value="widow">
+                  <label >Widow</label>
+              </td>
+          </tr>
+          <tr>
+              <td>Do you have vehicles</td>
+              <td>
+                  <input type="radio" name="vehicles" value="yes">
+                  <label >Yes</label>
+                  <input type="radio" name="vehicles" value="no">
+                  <label >No</label>
+              </td>
+          </tr>
+          <tr>
+              <td>
+                  <button id="btnRadioAll">Save</button>
+              </td>
+          </tr>
+      </table>
+      <div id="resultradioall" class="text-danger"></div>
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
       integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"

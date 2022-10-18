@@ -19,6 +19,14 @@ $(document).ready(function () {
         $("#lblRes1").text(res);
     });
   
+//get radio values by name inside click handler
+    $("#btnRadioAll").click(function(){
+        var textA=$("#txtA").val();
+        var gender=$("input[name=gender]:checked").val();
+        var maritalStatus=$("input[name=married]:checked").val(); 
+        var haveVehicles=$("input[name=vehicles]:checked").val(); 
+        $("#resultradioall").append(textA+ " "+gender+ " "+maritalStatus+" "+haveVehicles);
+    });
 });	
 
 function getRadioValue(){
