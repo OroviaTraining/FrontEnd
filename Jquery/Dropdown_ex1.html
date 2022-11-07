@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <h1>Drop-down</h1>
+    <ol>
+      <li>Jquery Document Ready function</li>
+      <li>Getting a selected dropdown value</li>
+      <li>Reading and adding to dropdown values</li>
+      <li>Writing a Javascript function</li>
+    </ol>
+    <p>
+      <b
+        >jQuery .children() Method: Get the children of each element in the set
+        of matched elements, optionally filtered by a selector.
+        <br />
+        Syntax: .children() , $( event.target ).children();
+      </b>
+    </p>
+    <p>
+      <b
+        >jQuery .clone() method: Create a deep copy of the set of matched
+        elements.
+        <br />
+        Syntax: $( ).clone().appendTo();</b
+      >
+    </p>
+    <hr />
+
+    <div class="container">
+      <h3>Move Cities</h3>
+      <div class="row mt-5">
+        <div class="col">
+          <div class="form-group">
+            <label for="Cities1">Cities:</label>
+            <select multiple class="form-select" id="Cities1" size="10">
+              <option value="1">Shimoga</option>
+              <option value="2">Banglore</option>
+              <option value="3">Mysore</option>
+              <option value="4">Manglore</option>
+            </select>
+          </div>
+        </div>
+        <div class="col mt-5 text-center">
+          <button id="btnRightMove" class="btn btn-success mb-3">></button
+          ><br />
+          <button id="btnRightMoveAll" class="btn btn-success mb-3">>></button
+          ><br />
+          <button id="btnLeftMove" class="btn btn-danger mb-3"><</button><br />
+          <button id="btnLeftMoveAll" class="btn btn-danger mb-3"><<</button
+          ><br />
+        </div>
+        <div class="col">
+          <div class="form-group">
+            <label for="Countries">Countries:</label>
+            <select multiple class="form-select" id="Countries" size="10">
+              <option value="1">India</option>
+              <option value="2">USA</option>
+              <option value="3">UK</option>
+              <option value="4">Paris</option>
+            </select>
+          </div>
+        </div>
+      </div>
+      <label id="res" class="text-danger"></label>
+      <hr />
+      <hr />
+      <h3>Copy Cities</h3>
+      <div class="row mt-5">
+        <div class="col">
+          <div class="form-group">
+            <label for="Cities2">Cities:</label>
+            <select multiple class="form-select" id="Cities2" size="10">
+              <option value="1">Shimoga</option>
+              <option value="2">Banglore</option>
+              <option value="3">Mysore</option>
+              <option value="4">Manglore</option>
+            </select>
+          </div>
+        </div>
+        <div class="col mt-5 text-center">
+          <button id="btnRightCopy" class="btn btn-success mb-3">></button
+          ><br />
+          <button id="btnRightCopyAll" class="btn btn-success mb-3">>></button
+          ><br />
+          <button id="btnLeftCopy" class="btn btn-danger mb-3"><</button><br />
+          <button id="btnLeftCopyAll" class="btn btn-danger"><<</button><br />
+        </div>
+        <div class="col">
+          <div class="form-group">
+            <label for="Countries1">Countries:</label>
+            <select multiple class="form-select" id="Countries1" size="10">
+              <option value="1">India</option>
+              <option value="2">USA</option>
+              <option value="3">UK</option>
+              <option value="4">Paris</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"
+      integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.6.1.min.js"
+      integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/A8.js"></script>
+  </body>
+</html>
