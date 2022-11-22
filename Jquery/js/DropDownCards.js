@@ -37,6 +37,7 @@ $(document).ready(function () {
         
     })
     
+
       //5. Add options to Dropdown list(method 1)
     $("#btnSetDropDown5").click(function(){
         var Value=$("#inputColorValue5").val();
@@ -62,7 +63,7 @@ $(document).ready(function () {
         $(".set").val("");    
     });
     
-    //8. Add options to Dropdown list(method 4)
+    //8. Add options to Dropdown list(method 4)7
     $("#btnSetDropDown8").click(function(){
         var Value=$("#inputColorValue8").val();
         var Text=$("#inputColorText8").val();
